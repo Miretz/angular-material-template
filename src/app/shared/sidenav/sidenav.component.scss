@@ -1,0 +1,35 @@
+.sidenav-container {
+  position: absolute;
+  top: 60px;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+  border: 0;
+  background: #ffffff;
+}
+
+.sidenav-content {
+  margin-left: 20px;
+  margin-top: 12px;
+}
+
+.sidenav {
+  padding: 0px;
+  background: #fafafa;
+  border: 0;
+}
+
+.sidenav-link {
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  outline: 0;
+}
+
+.sidenav-link:hover {
+  background-color: #efefef;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  outline: 0;
+}
