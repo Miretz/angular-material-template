@@ -12,6 +12,7 @@
         *ngFor="let item of sidenavLinks"
         class="sidenav-link"
         [routerLink]="item.link"
+        [matTooltip]="item.tooltip"
       >
         <mat-icon mat-list-icon>{{ item.icon }}</mat-icon>
         <h4 mat-line *ngIf="isExpanded">{{ item.title }}</h4>

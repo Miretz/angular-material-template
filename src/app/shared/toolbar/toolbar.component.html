@@ -5,6 +5,7 @@
       class="toolbar-icon"
       aria-label="Open Side Menu"
       (click)="toggleSidenav()"
+      matTooltip="Expand Menu"
     >
       <mat-icon>menu</mat-icon>
     </button>
@@ -14,16 +15,36 @@
   </div>
   <span class="toolbar-spacer"></span>
   <app-search-box></app-search-box>
-  <button mat-icon-button class="toolbar-icon" aria-label="Notifications">
+  <button
+    mat-icon-button
+    class="toolbar-icon"
+    aria-label="Notifications"
+    matTooltip="Notifications"
+  >
     <mat-icon>notifications</mat-icon>
   </button>
-  <button mat-icon-button class="toolbar-icon" aria-label="Settings">
+  <button
+    mat-icon-button
+    class="toolbar-icon"
+    aria-label="Settings"
+    matTooltip="Settings"
+  >
     <mat-icon>settings</mat-icon>
   </button>
-  <button mat-icon-button class="toolbar-icon" aria-label="Support">
+  <button
+    mat-icon-button
+    class="toolbar-icon"
+    aria-label="Support"
+    matTooltip="Get Support"
+  >
     <mat-icon>help_outline</mat-icon>
   </button>
-  <button mat-icon-button class="toolbar-icon" aria-label="User Accout">
+  <button
+    mat-icon-button
+    class="toolbar-icon"
+    aria-label="User Accout"
+    matTooltip="Manage Account"
+  >
     <mat-icon>account_circle</mat-icon>
   </button>
 </mat-toolbar>

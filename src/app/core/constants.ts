@@ -1,19 +1,19 @@
 export const SIDENAV_LINKS: SidenavLink[] = [
   {
     title: 'Dashboard',
-    subtitle: 'Go back to the Dashboard',
+    tooltip: 'Go To Dashboard',
     link: '',
     icon: 'dashboard',
   },
   {
     title: 'Customers',
-    subtitle: 'Manage Customers',
+    tooltip: 'Manage Customers',
     link: '/customers',
     icon: 'people',
   },
   {
     title: 'Products',
-    subtitle: 'Browse Products',
+    tooltip: 'Browse Products',
     link: '/products',
     icon: 'shopping_cart',
   },
@@ -21,7 +21,7 @@ export const SIDENAV_LINKS: SidenavLink[] = [
 
 export interface SidenavLink {
   title: string;
-  subtitle: string;
+  tooltip: string;
   link: string;
   icon: string;
 }

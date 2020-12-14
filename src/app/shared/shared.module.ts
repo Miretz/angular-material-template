@@ -11,7 +11,8 @@ import { SidenavService } from './sidenav/sidenav.service';
 import { MatListModule } from '@angular/material/list';
 import { SearchBoxComponent } from './search-box/search-box.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import {MatInputModule} from '@angular/material/input';
+import { MatInputModule } from '@angular/material/input';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [ToolbarComponent, SidenavComponent, SearchBoxComponent],
@@ -25,6 +26,7 @@ import {MatInputModule} from '@angular/material/input';
     MatListModule,
     MatFormFieldModule,
     MatInputModule,
+    MatTooltipModule,
   ],
   exports: [ToolbarComponent, SidenavComponent],
   providers: [SidenavService],
