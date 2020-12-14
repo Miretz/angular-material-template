@@ -1,7 +1,7 @@
 export const SIDENAV_LINKS: SidenavLink[] = [
   {
     title: 'Dashboard',
-    tooltip: 'Go To Dashboard',
+    tooltip: 'View Dashboard',
     link: '',
     icon: 'dashboard',
   },
