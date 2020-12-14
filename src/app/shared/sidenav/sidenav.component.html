@@ -1,21 +1,28 @@
-<mat-drawer-container class="sidenav-container" autosize>
-  <mat-drawer #drawer class="sidenav" mode="side">
-    <mat-list>
-      <div mat-subheader>Menu</div>
+<mat-drawer-container class="sidenav-container">
+  <mat-drawer
+    #drawer
+    class="sidenav"
+    mode="side"
+    disableClose="true"
+    opened="true"
+    [@openClose]="isExpanded ? 'open' : 'closed'"
+  >
+    <mat-nav-list class="sidenav-list">
       <mat-list-item
         *ngFor="let item of sidenavLinks"
         class="sidenav-link"
         [routerLink]="item.link"
       >
         <mat-icon mat-list-icon>{{ item.icon }}</mat-icon>
-        <div mat-line>
-          {{ item.title }}
-        </div>
+        <h4 mat-line *ngIf="isExpanded">{{ item.title }}</h4>
       </mat-list-item>
-    </mat-list>
+    </mat-nav-list>
   </mat-drawer>
 
-  <div class="sidenav-content">
+  <div
+    class="sidenav-content"
+    [@openCloseContent]="isExpanded ? 'open' : 'closed'"
+  >
     <router-outlet></router-outlet>
   </div>
 </mat-drawer-container>

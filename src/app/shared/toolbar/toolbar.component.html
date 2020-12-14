@@ -1,12 +1,14 @@
 <mat-toolbar>
-  <button
-    mat-icon-button
-    class="toolbar-icon"
-    aria-label="Open Side Menu"
-    (click)="toggleSidenav()"
-  >
-    <mat-icon>menu</mat-icon>
-  </button>
+  <div class="sidenav-toggle-button">
+    <button
+      mat-icon-button
+      class="toolbar-icon"
+      aria-label="Open Side Menu"
+      (click)="toggleSidenav()"
+    >
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
   <div routerLink="" class="title">
     <span>Minimal App</span>
   </div>
