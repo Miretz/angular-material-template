@@ -1,5 +1,12 @@
 # Angular Material Template
 
+A small demo/template for starting new Angular Material projects.
+
+<img src="readme_screenshot/screenshot.png" />
+
+
+## Angular README
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.4.
 
 ## Development server
