@@ -1,2 +1,67 @@
 <h2>Dashboard</h2>
-<p>dashboard works!</p>
+
+<div class="dashboard-wrapper">
+  <div class="chart-container-parent mat-elevation-z4">
+    <h4>Product Categories</h4>
+    <div class="chart-container">
+      <ngx-charts-bar-vertical
+        [scheme]="colorScheme"
+        [results]="dataCategories"
+        [gradient]="false"
+        [xAxis]="true"
+        [yAxis]="true"
+        [legend]="false"
+        [showXAxisLabel]="false"
+        [showYAxisLabel]="true"
+        [xAxisLabel]="'Category'"
+        [yAxisLabel]="'Number of Products'"
+        [animations]="true"
+      >
+      </ngx-charts-bar-vertical>
+    </div>
+  </div>
+
+  <div class="chart-container-parent mat-elevation-z4">
+    <h4>Count of Products per Vendor</h4>
+    <div class="chart-container">
+      <ngx-charts-tree-map
+        [scheme]="colorScheme"
+        [results]="dataVendors"
+        [gradient]="false"
+        [animations]="true"
+      ></ngx-charts-tree-map>
+    </div>
+  </div>
+
+  <div class="chart-container-parent mat-elevation-z4">
+    <h4>Total Price of Products per Category</h4>
+    <div class="chart-container">
+      <ngx-charts-pie-grid
+        [results]="dataPriceCategory"
+        [scheme]="colorScheme"
+        [animations]="true"
+      >
+      </ngx-charts-pie-grid>
+    </div>
+  </div>
+
+  <div class="chart-container-parent mat-elevation-z4">
+    <h4>Total Price of Products per Vendor</h4>
+    <div class="chart-container">
+      <ngx-charts-bar-horizontal
+        [scheme]="colorScheme"
+        [results]="dataPriceVendor"
+        [xAxis]="true"
+        [yAxis]="true"
+        [legend]="false"
+        [showXAxisLabel]="true"
+        [showYAxisLabel]="true"
+        [xAxisLabel]="'Number of Products'"
+        [yAxisLabel]="'Vendor'"
+        [animations]="true"
+        [gradient]="false"
+      >
+      </ngx-charts-bar-horizontal>
+    </div>
+  </div>
+</div>

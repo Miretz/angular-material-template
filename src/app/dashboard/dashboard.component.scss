@@ -1,0 +1,29 @@
+.chart-container-parent {
+  display: block;
+  padding: 20px;
+  min-width: 520px;
+  width: 540px;
+  height: 380px;
+}
+
+.chart-container {
+  display: block;
+  min-width: 500px;
+  width: 500px;
+  height: 300px;
+}
+
+.dashboard-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+/* Column Gap */
+.dashboard-wrapper > * {
+  box-sizing: border-box;
+}
+.dashboard-wrapper > *:not(:last-child) {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
