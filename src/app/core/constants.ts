@@ -1,3 +1,5 @@
+export const MAIN_TITLE = 'Minimal App';
+
 export const SIDENAV_LINKS: SidenavLink[] = [
   {
     title: 'Dashboard',
