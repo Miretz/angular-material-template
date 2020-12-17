@@ -10,6 +10,11 @@
         placeholder="Filter"
       />
     </mat-form-field>
+    <span class="item-count">{{
+      dataSource.filteredData.length !== 1
+        ? dataSource.filteredData.length + " Items"
+        : dataSource.filteredData.length + " Item"
+    }}</span>
   </div>
 
   <table mat-table matSort [dataSource]="dataSource" class="products-table">
