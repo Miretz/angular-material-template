@@ -1,2 +1,8 @@
 <h2>Customers</h2>
-<p>customers works!</p>
+<p>Manage Customers</p>
+
+<div class="cards-wrapper">
+  <div *ngFor="let customer of customers">
+    <app-customer-profile [customer]="customer"></app-customer-profile>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+<mat-card class="customer-card mat-elevation-z4" *ngIf="customer">
+  <mat-card-header>
+    <div mat-card-avatar class="customer-header-image">
+      <mat-icon [style]="{ color: customer.avatar }">person_pin</mat-icon>
+    </div>
+    <mat-card-title
+      >{{ customer.firstName }} {{ customer.lastName }}</mat-card-title
+    >
+    <mat-card-subtitle>{{ customer.category }}</mat-card-subtitle>
+  </mat-card-header>
+  <!-- Placeholder profile picture -->
+  <img
+    mat-card-image
+    src="assets/customers/profile.png"
+    alt="Customer Photo"
+  />
+  <mat-card-content>
+    <mat-list>
+      <mat-list-item>
+        <mat-icon mat-list-icon>home</mat-icon>
+        <div mat-line>{{ customer.address }}</div>
+      </mat-list-item>
+      <mat-list-item>
+        <mat-icon mat-list-icon>phone</mat-icon>
+        <div mat-line>{{ customer.phoneNumber }}</div>
+      </mat-list-item>
+      <mat-list-item>
+        <mat-icon mat-list-icon>email</mat-icon>
+        <div mat-line>{{ customer.email }}</div>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>EDIT</button>
+  </mat-card-actions>
+</mat-card>

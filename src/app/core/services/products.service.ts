@@ -19,7 +19,7 @@ export interface ValueCount {
 export class ProductService {
   constructor() {}
 
-  getProducts(): Observable<Product[]> {
+  getAll(): Observable<Product[]> {
     return of(PRODUCTS_MOCK);
   }
 

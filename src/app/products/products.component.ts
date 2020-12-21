@@ -29,7 +29,7 @@ export class ProductsComponent implements OnInit, OnDestroy {
 
   constructor(private productsService: ProductService) {
     this.serviceSubscription = this.productsService
-      .getProducts()
+      .getAll()
       .subscribe((products: Product[]) => {
         this.dataSource.data = products;
       });

@@ -4,6 +4,7 @@ A small demo/template for starting new Angular Material projects.
 
 <img src="readme_screenshot/screenshot_dashboard.png" />
 <img src="readme_screenshot/screenshot.png" />
+<img src="readme_screenshot/screenshot_customers.png" />
 
 
 ## Angular README

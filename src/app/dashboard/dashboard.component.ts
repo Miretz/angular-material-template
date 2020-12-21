@@ -1,5 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
+import { DASHBOARD_COLORS } from '../core/constants';
 import { ProductService, ValueCount } from '../core/services/products.service';
 
 @Component({
@@ -19,18 +20,7 @@ export class DashboardComponent implements OnInit, OnDestroy {
   dataPriceVendor: ValueCount[] = [];
 
   colorScheme = {
-    domain: [
-      '#647c8a',
-      '#3f51b5',
-      '#2196f3',
-      '#00b862',
-      '#afdf0a',
-      '#a7b61a',
-      '#f3e562',
-      '#ff9800',
-      '#ff5722',
-      '#ff4514',
-    ],
+    domain: DASHBOARD_COLORS,
   };
 
   constructor(private productsService: ProductService) {
